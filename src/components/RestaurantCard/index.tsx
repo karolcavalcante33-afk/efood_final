@@ -8,9 +8,9 @@ import {
   Button,
   Header,
   Rating,
-  Star,
-  Highlight,
-  CategoryTag
+  // Importe o TagsContainer que criamos no styles.ts
+  TagsContainer, 
+  Tag 
 } from './styles'
 
 type Props = {
@@ -20,6 +20,7 @@ type Props = {
   image: string
   category: string
   rating: number
+  infos?: string[] // Caso você queira passar as tags por prop depois
 }
 
 const RestaurantCard = ({
@@ -38,20 +39,21 @@ const RestaurantCard = ({
 
   return (
     <Card>
-      <div style={{ position: 'relative' }}>
-        <Image src={image} alt={title} />
-
-        <Highlight>Destaque da semana</Highlight>
-        <CategoryTag>{category}</CategoryTag>
-      </div>
+      {/* Removemos a div com style inline e usamos a estrutura do styled-components */}
+      <Image src={image} alt={title} />
+      
+      <TagsContainer>
+        {/* Aqui você pode colocar uma lógica para mostrar o destaque apenas se existir */}
+        <Tag>Destaque da semana</Tag>
+        <Tag>{category}</Tag>
+      </TagsContainer>
 
       <Content>
         <Header>
           <Title>{title}</Title>
-
           <Rating>
             {rating}
-            <Star>★</Star>
+            <span>★</span> {/* Estilize a estrela no styles.ts se precisar */}
           </Rating>
         </Header>
 

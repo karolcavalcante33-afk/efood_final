@@ -1,108 +1,114 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-  background-color: #fff;
-  border-radius: 8px;
+  width: 472px;
+
+  height: auto;
+
+  background-color: #fff8f2;
+
   border: 1px solid #e66767;
 
-  overflow: hidden; /* 🔥 mantém corte da imagem correto */
+  position: relative;
 
   display: flex;
   flex-direction: column;
+
+  overflow: hidden;
+
+  padding-bottom: 8px;
 `
 
 export const Image = styled.img`
   width: 100%;
-  height: 180px;
+  height: 217px;
+
   object-fit: cover;
   display: block;
 `
 
 export const Content = styled.div`
-  padding: 12px; /* 🔥 mais espaço igual Figma */
+  padding: 8px;
+
   display: flex;
   flex-direction: column;
-  gap: 8px;
-`
 
-export const Title = styled.h3`
-  font-size: 18px; /* 🔥 mais destaque */
-  font-weight: bold;
-  margin: 0;
-  color: #e66767;
-`
-
-export const Description = styled.p`
-  font-size: 14px;
-  line-height: 22px;
-  color: #666;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-
-  margin: 0;
-`
-
-export const Button = styled.button`
-  background-color: #e66767;
-  color: #fff;
-  border: none;
-  padding: 8px 12px; /* 🔥 mais “botão de verdade” */
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 4px;
-
-  width: fit-content;
-  margin-top: 8px;
-
-  &:hover {
-    background-color: #d65656;
-  }
+  flex: 1;
 `
 
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 8px;
+`
+
+export const Title = styled.h3`
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+
+  color: #e66767;
 `
 
 export const Rating = styled.div`
   display: flex;
   align-items: center;
+
   gap: 4px;
-  font-size: 14px;
-  font-weight: bold;
+
+  font-size: 18px;
+  font-weight: 700;
+
   color: #e66767;
 `
 
-export const Star = styled.span`
-  color: #ffb930;
+export const Description = styled.p`
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #e66767;
+
+  margin-bottom: 16px;
 `
 
-/* 🔥 IMPORTANTE: essas tags funcionam com position relative no pai */
-export const Highlight = styled.span`
-  position: absolute;
-  top: 8px;
-  left: 8px;
-
+export const Button = styled.button`
   background-color: #e66767;
-  color: #fff;
-  padding: 4px 8px;
-  font-size: 12px;
-  border-radius: 4px;
+  color: #ffebd9;
+
+  border: none;
+
+  padding: 4px 6px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  width: fit-content;
+
+  margin-top: auto;
 `
 
-export const CategoryTag = styled.span`
+export const TagsContainer = styled.div`
   position: absolute;
-  top: 8px;
-  right: 8px;
 
+  top: 16px;
+  right: 16px;
+
+  display: flex;
+  gap: 8px;
+`
+
+export const Tag = styled.div`
   background-color: #e66767;
-  color: #fff;
-  padding: 4px 8px;
+  color: #ffebd9;
+
+  padding: 4px 6px;
+
   font-size: 12px;
-  border-radius: 4px;
+  font-weight: 700;
+
+  line-height: 14px;
 `

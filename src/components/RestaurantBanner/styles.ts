@@ -2,43 +2,52 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 320px;
+  height: 280px;
+
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: flex-end;
+
   position: relative;
 
   &::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.2)
-    );
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   > div {
     position: relative;
     z-index: 1;
+
     max-width: 1024px;
-    margin: 0 auto;
     width: 100%;
-    padding: 24px;
+
+    margin: 0 auto;
+    padding: 32px 16px;
+
+    color: #fff;
   }
 `
 
 export const Category = styled.span`
-  color: #fff;
-  font-size: 18px;
   display: block;
-  margin-bottom: 8px;
+
+  color: #fff;
+  font-size: 32px;
+  font-weight: 100;
+
+  margin-bottom: 156px;
 `
 
 export const Title = styled.h2`
   color: #fff;
   font-size: 32px;
+  font-weight: 900;
+
   margin: 0;
 `
