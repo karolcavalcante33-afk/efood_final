@@ -6,7 +6,8 @@ const Hero = () => {
     <Banner>
       <Logo src={logo} alt="efood" />
       <Title>
-  Viva experiências gastronômicas <br />
+  Viva experiências gastronômicas
+  <br />
   no conforto da sua casa
 </Title>
     </Banner>

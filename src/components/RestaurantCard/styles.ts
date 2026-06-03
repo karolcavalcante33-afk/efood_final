@@ -3,8 +3,6 @@ import styled from 'styled-components'
 export const Card = styled.div`
   width: 472px;
 
-  height: auto;
-
   background-color: #fff8f2;
 
   border: 1px solid #e66767;
@@ -15,8 +13,6 @@ export const Card = styled.div`
   flex-direction: column;
 
   overflow: hidden;
-
-  padding-bottom: 8px;
 `
 
 export const Image = styled.img`
@@ -32,8 +28,6 @@ export const Content = styled.div`
 
   display: flex;
   flex-direction: column;
-
-  flex: 1;
 `
 
 export const Header = styled.div`
@@ -87,8 +81,6 @@ export const Button = styled.button`
   cursor: pointer;
 
   width: fit-content;
-
-  margin-top: auto;
 `
 
 export const TagsContainer = styled.div`
@@ -105,7 +97,7 @@ export const Tag = styled.div`
   background-color: #e66767;
   color: #ffebd9;
 
-  padding: 4px 6px;
+  padding: 6px 8px;
 
   font-size: 12px;
   font-weight: 700;

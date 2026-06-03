@@ -5,38 +5,44 @@ export const Banner = styled.section`
   width: 100%;
   height: 384px;
 
-  background-color: #fff8f2;
+  background-color: #FFF8F2;
   background-image: url(${fundo});
   background-repeat: repeat;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 
   padding-top: 40px;
 `
 
 export const Logo = styled.img`
   width: 125px;
+  height: auto;
+
   margin-bottom: 138px;
 `
 
 export const Title = styled.h1`
+  max-width: 700px;
+
   font-family: 'Roboto', sans-serif;
+  font-size: 36px;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 30px;
+
+  line-height: 36px;
+
   text-align: center;
   color: #E66767;
 
-  max-width: 480px;
+  margin: 0 auto;
 
-  margin-top: 50px;
 
   @media (max-width: 768px) {
-    font-size: 22px;
-    line-height: 28px;
-    margin-top: 40px;
-    padding: 0 16px;
+    width: 90%;
+
+    font-size: 24px;
+    line-height: 30px;
   }
 `
