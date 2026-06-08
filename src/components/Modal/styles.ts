@@ -16,15 +16,16 @@ export const Overlay = styled.div`
 `
 
 export const Container = styled.div`
-  background-color: #fff;
-  padding: 24px;
-  max-width: 700px;
+  background-color: #E66767;
+  padding: 32px;
+  max-width: 1024px;
   width: 100%;
-  border-radius: 8px;
   position: relative;
 
   display: flex;
-  gap: 16px;
+  gap: 24px;
+
+  color: #FFEBD9;
 `
 
 export const CloseButton = styled.button`
