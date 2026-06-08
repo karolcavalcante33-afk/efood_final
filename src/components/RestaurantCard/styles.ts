@@ -60,7 +60,7 @@ export const Rating = styled.div`
 
 export const Description = styled.p`
   font-size: 14px;
-  line-height: 22px;
+  line-height: 18px;
 
   color: #e66767;
 

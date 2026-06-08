@@ -18,21 +18,23 @@ export const Content = styled.div`
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 0 32px;
 `
 
 const Text = styled.span`
   color: #E66767;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 `
 
 const Logo = styled.img`
-  height: 40px;
+  height: 50px;
 `
 
 const ProfileHeader = () => {

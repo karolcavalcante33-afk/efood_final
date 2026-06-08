@@ -23,7 +23,7 @@ export const Card = styled.div`
   flex-direction: column;
 
   width: 320px;
-  min-height: 320px;
+ /* min-height: 320px; */
 
   border: 1px solid #e66767;
 `
