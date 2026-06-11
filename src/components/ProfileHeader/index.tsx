@@ -7,8 +7,8 @@ export const Container = styled.header`
   height: 186px;
 
   background-image: url(${fundoImg});
-  background-size: auto;
   background-repeat: repeat;
+  background-size: auto;
 
   display: flex;
   align-items: center;
@@ -23,29 +23,49 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 32px;
+  padding: 0 16px;
 `
 
-const Text = styled.span`
-  color: #E66767;
-  font-size: 24px;
-  font-weight: 700;
+const LeftText = styled.span`
+  width: 109px;
+
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+
+  color: #e66767;
+
+  text-align: center;
+`
+
+const RightText = styled.span`
+  width: 256px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+
+  color: #e66767;
+
+  text-align: right;
 `
 
 const Logo = styled.img`
-  height: 50px;
+  width: 125px;
+  height: auto;
 `
 
 const ProfileHeader = () => {
   return (
     <Container>
       <Content>
-        <Text>Restaurantes</Text>
+        <LeftText>Restaurantes</LeftText>
 
         <Logo src={logoImg} alt="efood" />
 
-        <Text>0 produto(s) no carrinho</Text>
+        <RightText>0 produto(s) no carrinho</RightText>
       </Content>
     </Container>
   )

@@ -6,36 +6,33 @@ export const Banner = styled.section`
   height: 384px;
 
   background-image: url(${fundo});
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 
-  padding-top: 64px;
+  padding-top: 32px;
 `
 
 export const Logo = styled.img`
   width: 125px;
   height: auto;
-  margin-bottom: 138px;
+  margin-bottom: 100px;
 `
 
 export const Title = styled.h1`
-  max-width: 700px;
+  width: 539px;
+
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
-  font-weight: bold; /* Tente bold se 900 ficar muito grosso */
-  line-height: 42px; /* Ajuste para o texto não ficar colado */
+  font-weight: 900;
+  line-height: 100%;
+
   text-align: center;
   color: #E66767;
-  margin: 0; 
-  padding: 0 16px; /* Garante que não encoste nas laterais em telas pequenas */
 
-  @media (max-width: 768px) {
-    font-size: 24px;
-    line-height: 30px;
-  }
+  margin: 0 auto;
+  padding: 0;
 `

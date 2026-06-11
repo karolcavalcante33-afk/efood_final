@@ -30,11 +30,14 @@ export const Container = styled.div`
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
+
+  background: transparent;
   border: none;
-  background: none;
-  font-size: 18px;
+
+  color: #FFEBD9;
+  font-size: 16px;
   cursor: pointer;
 `
 

@@ -8,10 +8,10 @@ export const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 
+  position: relative;
+
   display: flex;
   align-items: flex-end;
-
-  position: relative;
 
   &::after {
     content: '';
@@ -24,11 +24,11 @@ export const Container = styled.div`
     position: relative;
     z-index: 1;
 
-    max-width: 1024px;
     width: 100%;
-
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 32px 16px;
+
+    padding-bottom: 32px;
 
     color: #fff;
   }
@@ -37,17 +37,23 @@ export const Container = styled.div`
 export const Category = styled.span`
   display: block;
 
-  color: #fff;
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 100;
+  line-height: 32px;
+
+  color: #fff;
 
   margin-bottom: 156px;
 `
 
 export const Title = styled.h2`
-  color: #fff;
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 900;
+  line-height: 37px;
+
+  color: #fff;
 
   margin: 0;
 `
